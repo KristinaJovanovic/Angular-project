@@ -14,10 +14,15 @@ export class FormComponent implements OnInit {
   }
 
   odbaci(){
-
+    this.service.inicijliyujReuest()
   }
   dodaj(){
-
+    if(this.service.reuest.podnosilacZahteva!="" && this.service.reuest.nameZahteva!=""){
+      this.service.dodajReuest()
+      alert("Uspesno stepodneli zahtev!")
+    }else{
+      alert("Popunite obavezna polja!")
+    }
   }
 
 }
