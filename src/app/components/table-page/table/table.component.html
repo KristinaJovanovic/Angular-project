@@ -1,0 +1,39 @@
+<div class="table-container shadow-sm">
+    <table class="table">
+        <thead>
+            <tr>
+                <th (click)="sortTable(0)">ID</th>
+                <th (click)="sortTable(1)">Naziv zahteva</th>
+                <th (click)="sortTable(2)">Podnosilac zahteva</th>
+                <th (click)="sortTable(3)">Privilegije</th>
+                <th (click)="sortTable(4)">Napomena</th>
+                <th (click)="sortTable(5)">Rok obrade</th>
+                <th (click)="sortTable(6)">Prioritet obrade</th>
+
+            </tr>
+        </thead>
+        <tbody *ngIf="service.lista.length>0">
+            <tr *ngFor="let element of service.lista; let i=index;">
+                <th scope="row">{{element.id}}</th>
+                <td>{{element.nameZahteva}}</td>
+                <td>{{element.podnosilacZahteva}}</td>
+                <td>{{privilegijeToString(element.privilegije)}}</td>
+                <td>{{element.napomena}}</td>
+                <td>{{element.rokObrade}}</td>
+                <td>{{prioritetObradeToString(element.prioritetObrade)}}</td>
+                <td (click)="obrisiRed(i)">
+                    <mat-icon>delete</mat-icon>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div class="clearTable d-flex align-items-center justify-content-center" style="text-align: center;" *ngIf="service.lista.length==0">
+        <mat-icon  style="font-size:100px; color: grey;">warning</mat-icon>
+        <br>
+        <br>
+        
+        <p style="font-size: 30px;">Prazna lista</p>
+
+    </div>
+    
+</div>

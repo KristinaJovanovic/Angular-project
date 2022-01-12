@@ -1,0 +1,19 @@
+<div class="form-group">
+    <label for="formGroupExampleInput">Naziv zahteva:*</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" [(ngModel)]="service.reuest.nameZahteva" placeholder="Example input">
+</div>
+<div class="form-group">
+    <label for="formGroupExampleInput">Podnosilac zahteva:*</label>
+    <input type="text" class="form-control" id="formGroupExampleInput"  [(ngModel)]="service.reuest.podnosilacZahteva" placeholder="Example input">
+</div>
+<div class="select-group">
+    <label for="formGroupExampleInput">Podnosilac zahteva:*</label>
+    <select class="form-select" aria-label="Default select example"  (change)="selectPrivilege($event)" >
+        <option value="ADMIN" selected>ADMIN</option>
+        <option value="USER">USER</option>
+    </select>
+</div>
+<div class="form-group">
+    <label for="formGroupExampleInput">Napomena</label>
+    <textarea name="" id="" cols="30" rows="10" class="form-control"  [(ngModel)]="service.reuest.napomena" ></textarea>
+</div>

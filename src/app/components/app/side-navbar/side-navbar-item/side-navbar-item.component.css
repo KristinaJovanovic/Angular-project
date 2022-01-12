@@ -1,0 +1,15 @@
+p{
+    color: white;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 70px;
+    margin: 0px;
+    border-left: 4px solid transparent;
+
+    
+}
+p:hover{
+    background-color: rgba(187, 184, 184, 0.39);
+    cursor: pointer;
+    border-left: 4px solid yellow;
+}

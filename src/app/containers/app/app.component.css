@@ -1,0 +1,12 @@
+.row>* {
+    padding-right: 0;
+    padding-left: 0;
+}
+.mat-icon-button{
+    background-color: transparent;
+    margin: 10px;
+    position: absolute;
+}
+.example-container{
+    height: 100vh;
+}

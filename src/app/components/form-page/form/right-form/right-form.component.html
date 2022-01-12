@@ -1,0 +1,39 @@
+
+    <div class="form-group">
+        <label for="formGroupExampleInput" >Rok obrade</label>
+        <input type="date" class="form-control" id="formGroupExampleInput"
+            placeholder="Example input" [(ngModel)]="service.reuest.rokObrade">
+    </div>
+    <div class="form-group">
+        <label for="formGroupExampleInput">Prioritet</label>
+        <div class="radio-body">
+
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="urgentRadios" id="lowUrgent"
+                    value="low" (click)="updatePrioritet('low')" >
+                <label class="form-check-label" for="lowUrgent">
+                    Low
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="urgentRadios" id="mediumUrgent"
+                    value="medium" checked (click)="updatePrioritet('medium')">
+                <label class="form-check-label" for="mediumUrgent">
+                    Medium
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="urgentRadios" id="highUrgent"
+                    value="high" (click)="updatePrioritet('high')" >
+                <label class="form-check-label" for="highUrgent">
+                    High
+                </label>
+            </div>
+        </div>
+     
+    </div>
+  
+
+
+
+

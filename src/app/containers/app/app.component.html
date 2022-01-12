@@ -1,0 +1,15 @@
+<app-navbar></app-navbar>
+
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side" [opened]="panelOpen" >
+        <app-side-navbar></app-side-navbar>
+    </mat-drawer>
+  
+    <div class="example-sidenav-content">
+        <button mat-icon-button color="accent" (click)='panelOpen=!panelOpen'>
+            <mat-icon>menu</mat-icon>
+          </button>
+        <router-outlet></router-outlet>
+    </div>
+  
+  </mat-drawer-container>

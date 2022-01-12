@@ -1,0 +1,14 @@
+.table-container{
+padding:30px ;
+background-color: white;
+ border-radius: 10px;
+}
+tr:hover{
+    background-color: rgba(187, 184, 184, 0.39);
+    cursor: pointer;
+   
+}
+.clearTable{
+    height: 60vh;
+    width: 100%;
+}

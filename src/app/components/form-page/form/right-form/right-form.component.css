@@ -1,0 +1,9 @@
+.check-text, .radio-body{
+    margin-left: 10px;
+}
+.custom-checkbox{
+    margin-top: 40px;
+}
+.form-group, .select-group, .radio-body{
+    margin-top: 20px;
+} 
