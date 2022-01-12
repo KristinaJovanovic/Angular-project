@@ -50,7 +50,7 @@ prioritetObradeToString(prioritet:number){
 
 }
 obrisiRed(i:number){
-    this.service.lista.splice(i,1);
+    this.service.izbaciRequest(i)
 }
 
 
