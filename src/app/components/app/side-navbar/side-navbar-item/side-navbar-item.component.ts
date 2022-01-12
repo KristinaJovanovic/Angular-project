@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-side-navbar-item',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./side-navbar-item.component.css']
 })
 export class SideNavbarItemComponent implements OnInit {
-
-  constructor() { }
+  @Input() name:string='';
+  @Input() route:string='';
+  
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
+  }
+
+  openLink(){
+    this.router.navigate([this.route])
   }
 
 }
